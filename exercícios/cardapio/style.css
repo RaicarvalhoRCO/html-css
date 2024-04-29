@@ -10,15 +10,14 @@ main{
 
 body{
         background-color: rgba(165, 42, 42, 0.623);
-        background-image: url(fundo.webp);
+        background-image: url(assets/fundo.webp);
 }
 
 @font-face {
     font-family: 'Decaying';
-    src: url('fonte/Decaying.ttf') format('truetype');    
+    src: url('assets/fontes/decaying.ttf') format('truetype');    
 }
 
-/*combinar estilo h1 titulo*/
 h1,.titulo{
     font-family: 'Decaying', sans-serif;
     font-size: 1em;
@@ -73,11 +72,7 @@ a{
     color: gold;
     text-align: center;
 }
-a:link {
-    text-decoration: none;
-}
-  
-a:visited {
+a:link, a:visited {
     text-decoration: none;
 }
 

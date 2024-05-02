@@ -56,7 +56,6 @@ li{
 
 .comidas{
     outline: 1px dashed gold;
-    align-content: center;
     background-color: rgb(73, 73, 73);
     height: 30px;
     width: 150px;
@@ -70,7 +69,6 @@ li{
 
 a{
     color: gold;
-    text-align: center;
 }
 a:link, a:visited {
     text-decoration: none;

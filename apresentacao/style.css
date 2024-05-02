@@ -1,0 +1,61 @@
+main{
+    border-radius: 10px;
+    width: 1600px;
+    padding: 10px;
+    margin:auto;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(59, 59, 59, 0.39);
+}
+
+
+body{
+    background-image: url(assets/background.png);    
+}
+
+th{
+    color: #daaf61;
+}
+
+.foto{
+    display: flex;
+    justify-content: left;
+    border: 20px solid #daaf61;
+    border-image: url(assets/borda.png);
+    border-image-slice: 25;
+}
+
+h2{
+    color: #daaf61;
+}
+
+.competencia{
+    outline: inset;
+    height: 30px;
+    width: 200px;
+    font-size: 1em;
+    color: #daaf61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.competencia:hover{
+    background-color: rgba(59, 59, 59, 0.685);
+}
+
+.competencias{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.411);   
+    padding: 10px;
+    box-shadow: 4px 4px 10px 4px inset rgba(0, 0, 0, 0.7);
+    border-radius: 10px 0px;
+}
+
+ul{
+    color: #daaf61;
+}
+
+
+
+

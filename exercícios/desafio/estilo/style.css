@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --preto:#000000;
+    --cinza-escuro:#666666;
+    --cinza: #979797;
+    --marfim: #eeeeee;
+    --azul: #0088cc;
+
+    --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-tech: 'Share Tech Mono';
+}
+
+body{
+    background-color:#eeeeee;
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    font-family: var(--fonte-destaque);
+}
+
+header > h1{
+    background-color: var(--cinza);
+    font-family: var(--fonte-destaque);
+}
+
+header > p{
+
+}
+
+main h1, h2, h3{
+    font-family: var(--fonte-tech);
+}
+
+nav{
+    background-color: var(--cinza-escuro);
+    font-family: var(--fonte-tech);
+}
+
+
+footer{
+    background-color: #666666;
+    color: white;
+}

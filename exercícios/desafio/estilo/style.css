@@ -7,7 +7,6 @@
     padding: 0px;
 }
 
-
 :root{
     --preto:#000000;
     --cinza-escuro:#666666;
@@ -25,30 +24,150 @@ body{
     font-family: var(--fonte-padrao);
 }
 
-header{
-    font-family: var(--fonte-destaque);
+a.externo::after{
+    content: '\00A0\1F517';
 }
 
-header > h1{
-    background-color: var(--cinza);
-    font-family: var(--fonte-destaque);
+.logo{
+    display: flex;
+    justify-content: center;
 }
 
-header > p{
-
+main{
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    box-shadow: 2px 5px 10px 8px rgba(0, 0, 0, 0.671);
+    border-radius: 20px;
 }
+
 
 main h1, h2, h3{
     font-family: var(--fonte-tech);
+    background-image: linear-gradient(to right, var(--azul), transparent);
+    text-indent: 10px;
 }
+
+main p{
+    margin: 15px 0px 15px 0px;  
+    text-align: justify;  
+    text-indent: 30px;
+    line-height: 1.1em;
+}
+
+main strong{
+    color: var(--azul)
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--azul);
+    padding: 2px 4px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--marfim)
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cinza), var(--cinza-escuro));
+    font-family: var(--fonte-destaque);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 nav{
     background-color: var(--cinza-escuro);
     font-family: var(--fonte-tech);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.438);
 }
 
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav > :hover{
+    background-color: var(--azul);
+}
+
+div.video{
+    margin-bottom: 30px;
+    margin: 0px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color:#0088cc85;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.438);
+}
+
+aside h3{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cinza), var(--cinza-escuro));
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul{
+    list-style: none;
+    columns: 2;
+    padding: 10px;
+    font-family: var(--fonte-tech);
+    font-size: 1.5em;
+    text-align: center;
+}
 
 footer{
     background-color: #666666;
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    background-color: var(--azul);
 }

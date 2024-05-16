@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Usuário">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" placeholder="Senha">
+        </p>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="idata">Data</label>
+            <input type="date" name="Data" id="idata">
+        </p>
+        <p>
+            <label for="ifile">Arquivo</label>
+            <input type="file" name="Arquivo" id="ifile">
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="Mês" id="imes">
+        </p>
+        <p>
+            <label for="ibox">Checkbox</label>
+            <input type="checkbox" name="checkbox" id="ibox">
+        </p>
+        <p>
+            <label for="iradio">Radio</label>
+            <input type="radio" name="Radio" id="iradio">
+        </p>
+        <p>
+            <label for="itime">Hora</label>
+            <input type="time" name="time" id="itime">
+        </p>
+        <p>
+            <label for="imail">E-mail</label>
+            <input type="email" name="E-mail" id="imail">
+        </p>
+        <p>
+            <label for="irange">Range</label>
+            <input type="range" name="Range" id="irange" min="0" max="100" value="50" oninput="ival.innerHTML = Number(irange.value)">
+            <output id="ival">5</output>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <h1>Site</h1>
+        <span class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="menu">
+            <ul>
+                <li><a href="5">1</a></li>
+                <li><a href="4">2</a></li>
+                <li><a href="3">3</a></li>
+                <li><a href="2">4</a></li>
+                <li><a href="1">5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Site</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est eius enim ipsam. Pariatur nemo quisquam consectetur, optio sapiente doloribus, placeat nostrum iste ducimus eligendi eveniet, magnam explicabo doloremque aliquam?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nihil dignissimos aut qui impedit ad eius sequi incidunt nostrum totam vel, in asperiores repellat rem necessitatibus id quam eveniet nemo.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            }else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

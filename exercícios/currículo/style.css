@@ -65,6 +65,32 @@ a:hover {
 	color: white;
 }
 
+menu#itens{
+	display: none;
+}
+
+
+ul#ed, ul#exp, ul#hab, ul#idi{
+	display: none;
+}
+
+div#div_ed, div#div_exp, div#div_hab, div#div_idi{
+	cursor: pointer;
+}
+
+
+span.material-symbols-outlined{
+    background-color: #daaf61;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+span.material-symbols-outlined:hover{
+    background-color: gold;
+}
+
 /* Nesse caso você poderia criar classes separadas para o mesmo objetivo,
 na maioria dos casos com uma biblioteca de css tu usaria assim */
 

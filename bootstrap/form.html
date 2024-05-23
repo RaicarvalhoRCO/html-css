@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container p-5">
+        <h1 class="display-3">Endereço</h1>
+        <hr>
+        <form method="post" class="needs-validation" novalidate>
+            <div class="row mb-3 g-3">
+                <div class="col-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="col-6">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome">
+                </div>
+                <div class="col-4">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" pattern="[0-9]{8}">
+                </div>
+                <div class="col-8">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" required>
+                    <div class="invalid-feedback">
+                        Preenchido incorretamente
+                    </div>
+                    <div class="valid-feedback">
+                        Preenchido corretamente
+                    </div>
+                </div>
+                <div class="col-2">
+                    <label for="numero" class="form-label">Numero</label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-3">
+                    <label for="complemento" class="form-label">complemento</label>
+                    <input type="text" class="form-control" id="complemento">
+                </div>
+            </div>
+            <button class="btn btn-primary">Confirmar</button>
+        </form>
+    </div>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()
+    </script>
+</body>
+</html>
